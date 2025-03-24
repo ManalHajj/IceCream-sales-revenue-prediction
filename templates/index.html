@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Revenue Prediction</h1>
+        <p>Enter the temperature below to predict the total revenue from ice cream sales.</p>
+        
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="text" name="temperature" placeholder="Enter a temperature">
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <h3 class="prediction-text">{{ prediction_text }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+

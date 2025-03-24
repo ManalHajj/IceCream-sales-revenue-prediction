@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E2E; /* Dark navy blue */
+    color: #E0E0E0; /* Light gray for readability */
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    background: #2A2A40; /* Slightly lighter dark blue */
+    padding: 25px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: calc(100% - 130px); /* Ensure the input fits within the form */
+    margin-bottom: 20px; /* More space around input field */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none;
+}
+
+button {
+    background: #007BFF; /* Calmer blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+h3 {
+    background: #333A56; /* Soft dark blue */
+    color: #F0E68C; /* Warm yellow */
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 40%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #6C63FF; /* Elegant purple */
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+p {
+    font-size: 22px;
+    color: #555555; /* Slightly darker gray */
+    margin-bottom: 50px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.8;
+}
